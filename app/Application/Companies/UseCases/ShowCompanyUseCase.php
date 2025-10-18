@@ -15,6 +15,6 @@ class ShowCompanyUseCase
     {
         $company = $this->companyInterface->findById($id);
 
-        return $this->companyInterface->create($company);
+        return $company;
     }
 }

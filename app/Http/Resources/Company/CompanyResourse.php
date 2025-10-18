@@ -18,6 +18,8 @@ class CompanyResourse extends JsonResource
             'id' => $this->resource->id->getValue(),
             'name' => $this->resource->name,
             'email' => $this->resource->email,
+            'subscription' => $this->resource->subcription,
+            'plan' => $this->resource->plan,
         ];
     }
 }

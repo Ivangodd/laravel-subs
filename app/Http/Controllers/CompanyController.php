@@ -35,6 +35,7 @@ class CompanyController extends Controller
      */
     public function store(CreateCompanyRequest $request, CreateCompanyUseCase $createCompanyUseCase)
     {
+         return 'Hola';
         try {
             $company = new CreateCompanyDTO(
                 name: $request->name,
@@ -61,6 +62,7 @@ class CompanyController extends Controller
      */
     public function update(UpdateCompanyRequest $request, string $id, UpdateCompanyUseCase $updateCompanyUseCase)
     {
+
         try {
             $company = new UpdateCompanyDTO(
                 id: $id,

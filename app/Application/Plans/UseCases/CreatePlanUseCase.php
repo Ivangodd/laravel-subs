@@ -16,8 +16,6 @@ class CreatePlanUseCase
 
     public function execute(CreatePlanDTO $createDto): Plan
     {
-
-
         $plan = new Plan(
             null,
             $createDto->name,
@@ -25,9 +23,7 @@ class CreatePlanUseCase
             $createDto->userLimit,
             $createDto->features,
         );
-        Log::info('Instancia CreatePlanDTO creada correctamente', [
-                'plant' => $plan,
-         ]);
+
         return $this->planInterface->create($plan);
     }
 }
